@@ -33,7 +33,3 @@ WORKDIR /var/www/html/
 
 # laravel関連
 RUN composer global require laravel/installer
-RUN cd /var/www/html
-RUN laravel new src
-# これは見直す
-RUN chmod -R 777 /var/www/html/src/storage
